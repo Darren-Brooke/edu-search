@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+}
+
+.col-1  {width: 8.33%;}
+.col-2  {width: 16.66%;}
+.col-3  {width: 25%;}
+.col-4  {width: 33.33%;}
+.col-5  {width: 41.66%;}
+.col-6  {width: 50%;}
+.col-7  {width: 58.33%;}
+.col-8  {width: 66.66%;}
+.col-9  {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+h1, h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+h1 {
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+
+body {
+    background-color: #79BEEE;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* The Footer Style */
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    height: 50px;
+    color: #ffffff;
+}
+/* The Row Content Style */
+.row {
+    /*background-color: ;*/
+    /*min-height: 590px;*/
+}
+
+ul.uni-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    max-height: 500px;
+    overflow-y: scroll;
+    max-width: 600px;
+}
+
+ul.uni-container li {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+ul.uni-container li {
+    list-style-type: none;
+}
+
+ul.uni-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.job-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+}
+
+ul.job-container li {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+ul.job-container li {
+    list-style-type: none;
+}
+
+ul.job-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.list a:hover:not(.active) {
+    background-color: #111;
+}
+
+li.list a.active {
+    background-color: grey;
+}
+
+/* HTML font */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Style */
+.header {
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    float: left;
+    background-color: #6D98EE;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+
+.uni {
+    padding: 2px;
+    border: 1px solid #6D98EE;
+    background-color: #6D98EE;
+    float: right;
+}
+
+
+/* Style the navigation menu */
+.navbar {
+    width: 100%;
+    background-color: #6D98EE;
+    float: right;
+    height: 100%;
+
+
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 25%; /* Four equal-width links. */
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+    background-color: #4E6DAC;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+    background-color: #4E6DAB;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center; /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+}
+
+nav select {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav ul     { display: none; }
+    nav select { display: inline-block; }
+}
+
+.job-menu-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 90%;
+}
+
+/* Style the search box */
+.search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 0px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    width: 10%;
+}
+.search-container {
+    width: 100%;
+}
+
+.search-container button:hover {
+    background: #6D98EE;
+}
+.job-menu-container {
+    padding: 0px;
+}
+
+
+
+#job-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#job-menu li a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block
+}
+
+#job-menu li a:hover {
+    background-color: #6D98EE;
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+
+}
+
+/* Style the buttons inside the tab */
+.job-menu button {
+    display: block;
+    background-color: inherit;
+    color: white;
+    padding: 22px 16px;
+    width: 100%;
+    border: 1px solid #6D98EE;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.content {
+    padding: 12px;
+}

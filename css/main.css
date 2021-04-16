@@ -1,0 +1,499 @@
+/*Imported Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    min-height: 80vh;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+/* Column Grid Start */
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/* HTML font */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Headings are set to Google Open Sans */
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Paragraph Text set to Google Roboto */
+p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: left;
+}
+
+html {
+    background-color: #FF7034;
+}
+/* Footer Style */
+.footer {
+    position: relative;
+    margin-bottom: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    color: #000000;
+    background-color: #FF7034;
+}
+
+/* The body colour */
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Style */
+.header {
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    float: left;
+    background-color: #FF7034;
+}
+
+#title {
+    padding-top: 17px;
+    font-size: 17px;
+}
+
+/* Set the default padding for all content */
+.content {
+    padding: 12px;
+}
+
+/* Default container width */
+.center-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Navigation Menus Start */
+/* Navigation Menu Style */
+ul.navbar {
+    list-style-type: none;
+    width: 100%;
+    float: right;
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Navigation links */
+ul.navbar li a {
+    float: left;
+    padding: 20px;
+    color: #000000;
+    text-decoration: none;
+    width: 100%; /* Four equal-width links. */
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+
+}
+
+/* Add a background color on mouse-over */
+ul.navbar li a:hover {
+    background-color: #FFFFFF;
+}
+
+/* Style the current/active link */
+ul.navbar li a.active {
+    background-color: #CF5300;
+}
+
+.menu-container input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: solid #BDBDBD;
+    border-width: 1px;
+    width: 90%;
+}
+
+/* Style the search box */
+.search-container button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 0px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    width: 10%;
+    border: solid #BDBDBD;
+    border-width: 1px;
+}
+
+.search-container {
+    width: 100%;
+}
+
+.search-container button:hover {
+    background: #6D98EE;
+}
+
+/* Side Navigation Start */
+.menu-container {
+    padding: 0px;
+}
+
+.sidenav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display :none;
+}
+
+.sidenav li a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidenav li a:hover {
+    background-color: #6D98EE;
+}
+
+/* Side Nav Button Style */
+.sidenav button {
+    display: block;
+    background-color: #FF7034;
+    color: #000000;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #000000;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Responsive Dropdown taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
+.dropdown-content {
+    display: block;
+    background-color: #FF7034;
+    color: #000000;
+    padding: 12px;
+    width: 80%;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dropdown-content li a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block
+}
+
+.dropdown-content li a:hover {
+    background-color: #6D98EE;
+}
+
+/* Side Nav Button Style */
+.dropdown-content button {
+    display: block;
+    background-color: #FF7034;
+    color: #000000;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #000000;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    display: block;
+    background-color: #FF7034;
+    color: #000000;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #000000;
+    outline: none;
+    text-align: right;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center; /* If you want the text to be left-aligned on small screens */
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav select {
+        display: inline-block;
+    }
+}
+/* Navigation Menus End */
+/* Subject Page unique CSS Start */
+#chart-container {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .chart-container {
+        position: relative;
+        height: 35vh;
+        width: 90vw;
+    }
+}
+/* Subject Page unique CSS End */
+
+/* University Page unique CSS Start */
+ul.uni-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    max-height: 65vh;
+    overflow-y: scroll;
+    max-width: 600px;
+    border: solid #BDBDBD .5px;
+}
+
+ul.uni-container li {
+    padding: 0;
+    margin: 0;
+}
+
+ul.uni-container li {
+    list-style-type: none;
+}
+
+ul.uni-container li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: solid #BDBDBD .5px;
+}
+
+li.list a:hover:not(.active) {
+    background-color: #FF7034;
+}
+
+li.list a.active {
+    background-color: white;
+}
+/* University Page unique CSS End */
+
+/* Job Page unique CSS End */
+/* Job Field Start */
+ul.job-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    overflow: hidden;
+    text-align: left;
+}
+
+ul.job-container li {
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+ul.job-container li {
+    list-style-type: none;
+}
+
+ul.job-container li a {
+    display: block;
+    color: #BDBDBD;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+hr.job-border {
+    border-top: 1px solid #000000;
+}
+/* Job Page unique CSS End */
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+
+    .sidenav {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    ul.navbar {
+        list-style-type: none;
+        width: 100%;
+        float: right;
+        height: 100%;
+        margin: 0;
+        font-size: 25px;
+    }
+
+    /* Navigation links */
+    ul.navbar li a {
+        float: left;
+        padding: 28px;
+        color: #000000;
+        text-decoration: none;
+        width: 25%; /* Four equal-width links. */
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    /* For desktop: */
+    .center-container {
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .center-container-index {
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
